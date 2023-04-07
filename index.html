@@ -78,6 +78,9 @@
   $().ready(alert("Let’s get ready to party with jQuery!"));
   $('img').attr('class', 'image-center');
   $('p').eq(-1).remove();
+  $('#title').css('font-size', function(){
+    let x = Math.floor(Math.random()*101);
+    return `${x}px`});
 
 </script>
 </body>
