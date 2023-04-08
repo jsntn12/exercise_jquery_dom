@@ -83,6 +83,11 @@
     return `${x}px`});
   $('ol').append('<li>My dog is named Remi.</li>');
   $('aside').html("<P>Here is a paragraph in apologizes for the list’s existence</p>");
+  $('input').on('keyup change', function(){
+    let [r,g,b]=[$('input').eq(0).val(),$('input').eq(1).val(),$('input').eq(2).val()];
+    $('body').css('background-color', `rgb(${r}, ${g}, ${b})`)
+  })
+    $('img').click(function () { $(this).remove()})
 
 </script>
 </body>
